@@ -1,0 +1,24 @@
+{%extends 'layout-html'%}
+
+{%block content%}
+<h4 class="form"> Register Here</h4>
+<div class="container form">
+    <hr>
+    <br>
+    <form action="/register" method="POST">
+    {{form.hidden_tag()}}
+    <div class="form-group">
+        {{form.name.label}}
+        {{form.name}}
+    </div>
+    <div class="form-group">
+        {{form.mail.label}}
+        {{form.mail}}
+    </div>
+    <br>
+    <div class="form-group">
+        {{forms.submit(class="btn btn-primary")}}
+    </div>
+    </form>
+</div>
+{%endblock content%}

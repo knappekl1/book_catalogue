@@ -2,7 +2,7 @@
 import re
 from app.catalog import main
 from app import db
-#(since Model is in same package/folder/ from models impot ... would suffice)
+#(since Model is in same package/folder/ from models import ... would suffice)
 from app.catalog.models import Publication, Book 
 from flask import render_template
 
