@@ -1,0 +1,40 @@
+<DOCTYPE html!>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Publsiher list</title>
+            <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+            <link rel="shortcut icon" href="{{ url_for('static', filename='favicon/favicon.ico') }}">
+        </head>
+    
+        <body>
+            <h1>
+                Books for {{publisher.name}}
+            </h1>
+            <h2>
+                <br>
+                <br>
+            </h2>
+            <table>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Format</th>
+                    <th>Rating</th>
+                    <th>Pages</th>
+                    <th>Picture</th>
+                </tr>
+                {%for book in books%}
+                <tr>
+                    <td>{{book.title}}</td>
+                    <td>{{book.author}}</td>
+                    <td>{{book.format}}</td>
+                    <td>{{book.avg_rating}}</td>
+                    <td>{{book.num_pages}}</td>
+                    <td><img src="{{url_for('static', filename='img/' + book.image)}}" alt="book-img" height="120" width="120"></td>
+                </tr>
+                {%endfor%}
+            </table>
+
+        </body>
+    </html>
