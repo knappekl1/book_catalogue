@@ -1,16 +1,41 @@
-table{
-    border-collapse: collapse;
+html, body {height: 100%; margin: 0; padding: 0}
+h2, h3, h4 { font-family: Sansita, serif }
+h1 { font-family: Sansita, serif; background-color: grey; text-align: center; width:30%; margin-left: 3px }
+p, li  { font-size: small }
+footer { position: absolute; width: 100%; left:0 ;bottom: 0; height: 40px }
+span {margin: 2px}
+
+.navbar-brand {color: floralwhite; font-family: Sansita, serif}
+.nav-list { position: relative; right: 7% }
+.books {padding: 25px; position: relative; left: 5%; width: 80%}
+.publisher {padding: 25px; position: relative; left: 40px}
+.ftr {padding: 25px}
+.wrapper {position: relative; min-height: 120%}
+
+
+.form {height: 50%; width:70%; padding: 10px; position: relative; left: 48px}
+.form-group {width: 40%}
+.login-msg {position: relative; left: 48px }
+
+table{font-family: Sansita, serif; 
+    border-collapse:separate;
+    border:solid gray 1px;
+    border-radius:6px;
+    -moz-border-radius:6px;
     width: 35%;
+    margin-left: 3px;
 }
 
 th{
     border: 1px solid gray;
+    font-size: 150%;
     text-align: center;
     background-color: lightblue;
     padding: 4px;
 }
 td{
     border: 1px solid gray;
+    font-size: 120%;
     text-align: left;
     padding: 4px;
 }

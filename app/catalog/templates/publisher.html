@@ -1,18 +1,10 @@
-<DOCTYPE html!>
-    <html>
-        <head>
-            <meta charset="UTF-8">
-            <title>Publsiher list</title>
-            <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
-            <link rel="shortcut icon" href="{{ url_for('static', filename='favicon/favicon.ico') }}">
-        </head>
-    
-        <body>
+{%extends 'layout.html'%}
+{%block content%}
+            <br>
             <h1>
                 Books for {{publisher.name}}
             </h1>
             <h2>
-                <br>
                 <br>
             </h2>
             <table>
@@ -35,6 +27,4 @@
                 </tr>
                 {%endfor%}
             </table>
-
-        </body>
-    </html>
+{% endblock content %}
