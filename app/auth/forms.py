@@ -3,6 +3,6 @@ from wtforms import StringField,SubmitField
 
 class RegistrationForm(FlaskForm):
     
-    name = StringField("Your Name")
+    name = StringField("Name")
     mail = StringField("Email")
     submit = SubmitField("Register")

@@ -20,5 +20,10 @@
         {{form.submit(class="btn btn-primary")}}
     </div>
     </form>
+    <br>
+    {%if (name) and (mail)%}
+        <p>Hello {{name}}</p>
+        <p>Your email with us is {{mail}}</p>
+    {%endif%}   
 </div>
 {%endblock content%}
