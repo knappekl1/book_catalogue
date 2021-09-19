@@ -5,25 +5,8 @@
 <div class="container form">
     <hr>
     <br>
-    <form action="/register" method="POST">
-    {{form.hidden_tag()}}
-    <div class="form-group">
-        {{form.name.label}}
-        {{form.name}}
-    </div>
-    <div class="form-group">
-        {{form.mail.label}}
-        {{form.mail}}
-    </div>
-    <br>
-    <div class="form-group">
-        {{form.submit(class="btn btn-primary")}}
-    </div>
-    </form>
-    <br>
-    {%if (name) and (mail)%}
-        <p>Hello {{name}}</p>
-        <p>Your email with us is {{mail}}</p>
-    {%endif%}   
+    
+    {{form.hidden_tag}}
+    {{wtf.quick_form(form)}}
 </div>
 {%endblock content%}
